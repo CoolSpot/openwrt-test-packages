@@ -17,11 +17,11 @@ echo "src-git openwrttest https://github.com/coolspot/openwrt-test-packages.git"
 ### Building the package
 ```
 make menuconfig
-\# In the menuconfig select the package Test/sub-test/throw-catch-sigsegv to be built
+# In the menuconfig select the package Test/sub-test/throw-catch-sigsegv to be built
 make package/throw-catch-sigsegv/install
-\# Copy the package on the device (or VM)
+# Copy the package on the device (or VM)
 scp ./bin/malta/packages/openwrttest/throw-catch-sigsegv_2016-02-25_malta_mips.ipk qemu:/tmp/
-\# on the device (or VM)
+# on the device (or VM)
 root@OpenWrt:~# opkg install /tmp/throw-catch-sigsegv_2016-02-25_malta_mips.ipk
 ```
 
